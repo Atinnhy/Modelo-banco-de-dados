@@ -1,0 +1,18 @@
+1-
+SELECT * FROM Dependente
+
+3-
+SELECT COUNT(DISTINCT nomeDepartamento) AS total_departamentos
+FROM TabDepartamentos;
+
+4-
+SELECT COUNT(*) AS total_registros
+FROM Item;
+
+obs: total_registros é um Alias
+
+5-
+SELECT descricao, quantidade_disponivel
+FROM PRODUTO
+WHERE descricao LIKE '%CANETA%'
+ORDER BY quantidade_disponivel ASC;
